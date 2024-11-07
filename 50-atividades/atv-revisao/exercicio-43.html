@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 43</title>
+</head>
+<body>
+    <script>
+        function exibir(objeto) {
+            for (valor in objeto) {
+                alert(valor + objeto[valor])
+            }
+        }
+        const Pessoa = {
+            nome: "Junia",
+            idade: 35,
+            cidade: "Birigui - SP"
+        }
+        console.log(Pessoa)
+        exibir(Pessoa)
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 25</title>
+</head>
+<body>
+    <script>
+        function sequenciaFibonacci (n) {
+            var pa = 0, pb = 1
+            var sequencia = []
+            for (var i = 0; i <= n; i++) {
+                sequencia.push(pa) 
+                let calc = pa + pb
+                pa = pb
+                pb = calc
+            }
+            alert(sequencia)
+        }
+        var resultado = sequenciaFibonacci(8)
+    </script>
+</body>
+</html>

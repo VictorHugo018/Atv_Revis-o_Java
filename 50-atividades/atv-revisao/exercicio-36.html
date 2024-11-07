@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 36</title>
+</head>
+<body>
+    <script>
+        var cores = ["Verde", "Azul", "Marrom", "Rosa"]
+        var procurar = "Verde"
+        var indice = -1
+        for (var i = 0; i < cores.length; i++) {
+            if (cores[i] === procurar) {
+                indice = i
+                break
+            }
+        }
+        if (indice !== -1) {
+            alert("O índice de " + procurar + " é: " + indice)
+        }
+        else {
+            alert(procurar + "não foi encontrado")
+        }
+    </script>
+</body>
+</html>
